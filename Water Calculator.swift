@@ -4,7 +4,7 @@
 //
 //  Created by Harry on 31/5/19.
 //  Copyright © 2019 LIN, Harry. All rights reserved.
-//
+// 
 
 import UIKit
 
@@ -50,11 +50,11 @@ class Water_Calculator: UIViewController {
                     } else {
                         lblFeedback.text = "Your household’s water usage is higher than average, with an average daily water usage of more than 160L per person. Good ways to conserve water usage include limiting the amount of time spent in the shower, checking all taps and sinks for leakage, and using more efficient showerheads and appliances that use water. You could save more than $\(potentialSavings) every 3 months if each member of your household used 10 litres less every day!"
                     }
-                    //This else statement corresponds with the if statement checking to see if the value entered into txtQuarter is a double.
+                    //This else statement corresponds with the if statement checking to see if the value entered into txtQuarter is a double. If the values entered don't meet the criteria for a double, the user is given an error through the label lblFeedback.
                 } else {
                     lblFeedback.text = "Not a valid number: \(String(describing: txtQuarter.text!)). Please enter a number with no more than 5 decimal places."
                 }
-                //This else statement corresponds with the if statement checking to see if the value entered into txtHousehold is an integer.
+                //This else statement corresponds with the if statement checking to see if the value entered into txtHousehold is an integer. If the values entered don't meet the criteria for an integer, the user is given an error through the label lblFeedback.
             } else {
                 lblFeedback.text = "Not a valid number: \(String(describing: txtHousehold.text!)). Please enter a whole number."
             }
